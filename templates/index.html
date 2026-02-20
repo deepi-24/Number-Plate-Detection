@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Plate Detection</title>
+    <link rel="stylesheet" href="yolov10/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Navigation</h2>
+            </div>
+            <div class="nav-options">
+                <div class="nav-option active">Upload Video</div>
+                <div class="nav-option">Upload Image</div>
+                <div class="nav-option">Webcam</div>
+                <div class="nav-option">Show Database</div>
+                <div class="nav-option">Clear Database</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h1>Automatic Number Plate Detection</h1>
+
+            <div class="content-section" id="upload-video">
+                <h2>Upload Video</h2>
+                <div class="upload-container">
+                    <input type="file" id="video-upload" accept=".mp4">
+                    <label for="video-upload" class="upload-button">Choose Video File</label>
+                </div>
+            </div>
+
+            <div class="content-section" id="upload-image">
+                <h2>Upload Image</h2>
+                <div class="upload-container">
+                    <input type="file" id="image-upload" accept=".jpg,.png">
+                    <label for="image-upload" class="upload-button">Choose Image File</label>
+                </div>
+            </div>
+
+            <div class="content-section" id="webcam">
+                <h2>Webcam</h2>
+                <button class="action-button">Start Webcam</button>
+            </div>
+
+            <div class="content-section" id="database">
+                <h2>Database Records</h2>
+                <div class="database-table">
+                    <!-- Table would be populated dynamically -->
+                </div>
+            </div>
+
+            <div class="content-section" id="clear-db">
+                <h2>Clear Database</h2>
+                <button class="danger-button">Clear Database</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
